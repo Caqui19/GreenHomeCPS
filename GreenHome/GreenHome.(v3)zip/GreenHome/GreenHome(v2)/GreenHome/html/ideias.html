@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideias | GreenHome</title>
+    <link rel="icon" href="../assets/icon.png">
+    <link rel="stylesheet" href="../css/ideias.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../assets/logo.png">
+    </header>
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="../html/index.html"><i class="fas fa-home"></i><span>Início</span></a></li>
+            <li><a href="../html/ficha.html"><img src="../assets/icon.png" width="20px"><span>Ficha</span></a></li>
+            <li><a href="../html/relatorios.html"><i class="fas fa-chart-line"></i><span>Relatórios</span></a></li>
+            <li><a><i class="fa-solid fa-lightbulb"></i><span class="selected">Ideias</span></a></li>
+            <li><a href="../html/perfil.html"><i class="fa-solid fa-circle-user"></i><span>Perfil</span></a></li>
+            <li id="logout"><a><i class="fas fa-sign-out-alt"></i><span>Sair</span></a></li>
+        </ul>
+        <p>2025 GreenHome</p>
+    </div>
+    <div class="container">
+        <h1>Ideias sustentáveis</h1>
+        <br>
+        <div class="posts">
+            <ul>
+                <li class="post" onclick="togglePost(this, event)">
+                    <div class="corpo">
+                        <p class="tema">Energia – Lâmpadas LED</p>
+                        <div class="conteudo">
+                            <p>Substitua lâmpadas incandescentes por lâmpadas LED. Elas consomem até 80% menos energia e
+                                duram muito mais.</p>
+                            <img
+                                src="https://static.revistahaus.com.br/revistahaus/2022/11/04183745/lampada-led-bigstock-.jpg">
+                        </div>
+                    </div>
+                </li>
+                <li class="post" onclick="togglePost(this, event)">
+                    <div class="corpo">
+                        <p class="tema">Água – Reaproveitamento</p>
+                        <div class="conteudo">
+                            <p>Utilize a água da chuva para regar plantas, lavar o quintal ou o carro. Isso reduz o
+                                consumo da rede pública.</p>
+                            <img src="https://bhoraconsultoria.com.br/wp-content/uploads/2021/05/agua.jpg">
+                        </div>
+                    </div>
+                </li>
+                <li class="post" onclick="togglePost(this, event)">
+                    <div class="corpo">
+                        <p class="tema">Eletrodomésticos – Uso consciente</p>
+                        <div class="conteudo">
+                            <p>Evite abrir a geladeira constantemente e use eletrodomésticos fora do horário de pico
+                                para economizar energia.</p>
+                            <img
+                                src="https://img.freepik.com/fotos-premium/eletrodomesticos-fogao-a-gas-geladeira-microondas-e-maquina-de-lavar-liquidificador-torradeira-cafeteira-picador-de-carne-e-chaleira-ilustracao-3d_505080-48.jpg?semt=ais_hybrid&w=740">
+                        </div>
+                    </div>
+                </li>
+                <li class="post" onclick="togglePost(this, event)">
+                    <div class="corpo">
+                        <p class="tema">Banho – Reduza o tempo</p>
+                        <div class="conteudo">
+                            <p>Diminuir o tempo no banho ajuda a economizar água e energia do aquecedor. Coloque um
+                                timer se precisar.</p>
+                            <img
+                                src="https://media.istockphoto.com/id/1309061526/pt/foto/shower-with-flowing-water-and-steam.jpg?s=612x612&w=0&k=20&c=xbbdoAvPWd6d9ktxcyFEsp9b2xecsCb2JFNJ1VIUCCg=">
+                        </div>
+                    </div>
+                </li>
+                <li class="post" onclick="togglePost(this, event)">
+                    <div class="corpo">
+                        <p class="tema">Desligue aparelhos em stand-by</p>
+                        <div class="conteudo">
+                            <p>Equipamentos em modo stand-by ainda consomem energia. Tire da tomada quando não estiver
+                                usando.</p>
+                            <img
+                                src="https://s2-g1.glbimg.com/aF-D8mL6f5bKaleGlGV9gZNTQ8w=/0x0:6000x4000/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/r/V/0KSQa8TBKTuqM7p9qlBQ/pexels-wanshan-luo-436509949-20383452.jpg">
+                        </div>
+                    </div>
+                </li>
+                <li class="post" onclick="togglePost(this, event)">
+                    <div class="corpo">
+                        <p class="tema">Aproveite luz natural</p>
+                        <div class="conteudo">
+                            <p>Abra as janelas e cortinas durante o dia para iluminar os ambientes sem usar energia
+                                elétrica.</p>
+                            <img
+                                src="https://imagens.climatempo.com.br/climapress/galeria/2021/09/750x553_7dc39b092790ae3fff164a24f038c346.jpg">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="module" defer src="../js/ideias.js"></script>
+
+</html>

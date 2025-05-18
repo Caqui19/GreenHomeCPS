@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Home | GreenHome</title>
+    <link rel="icon" href="../assets/icon.png">
+    <link rel="stylesheet" href="../css/ficha.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../assets/logo.png">
+    </header>
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="../html/index.html"><i class="fas fa-home"></i><span>Início</span></a></li>
+            <li><a><img src="../assets/icon.png" width="20px"><span class="selected">Ficha</span></a></li>
+            <li><a href="../html/relatorios.html"><i class="fas fa-chart-line"></i><span>Relatórios</span></a></li>
+            <li><a href="../html/ideias.html"><i class="fa-solid fa-lightbulb"></i><span>Ideias</span></a></li>
+            <li><a href="../html/perfil.html"><i class="fa-solid fa-circle-user"></i><span>Perfil</span></a></li>
+            <li id="logout"><a><i class="fas fa-sign-out-alt"></i><span>Sair</span></a></li>
+        </ul>
+        <p>2025 GreenHome</p>
+    </div>
+    <div class="container">
+        <h1>Para criar o relatório, preencha a ficha</h1>
+        <br>
+        <div class="formulario-container">
+            <h2>Ficha de consumo mensal</h2>
+            <br>
+            <br>
+            <form id="formConsumo">
+                <input type="number" id="energia" name="energia" placeholder="Consumo de Energia (kWh)" required
+                    min="0">
+                <input type="number" id="agua" name="agua" placeholder="Consumo de Água (litros)" required min="0">
+                <input type="number" id="gas" name="gas" placeholder="Consumo de Gás (kg ou m³)" required min="0">
+                <input type="number" id="habitantes" name="habitantes" placeholder="Número de moradores" required
+                    min="1">
+                <button type="submit">Enviar dados</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script type="module" defer src="../js/ficha.js"></script>
+
+</html>

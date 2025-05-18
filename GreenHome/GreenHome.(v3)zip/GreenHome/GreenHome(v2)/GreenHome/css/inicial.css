@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: #7ed95725;
+    color: #66af46;
+}
+
+::-moz-selection {
+    background: #7ed95725;
+    color: #66af46;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: #7ed957;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #7ed957;
+    height: 85px;
+    z-index: 1000;
+    display: flex;
+    gap: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 120px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #7ed957;
+    transition: 0.2s ease;
+}
+
+header nav ul li a:hover {
+    color: #66af46;
+}
+
+#cadastro {
+    color: #fff;
+    background-color: #7ed957;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 2px solid #7ed957;
+    transition: 0.2s ease;
+}
+
+#cadastro:hover {
+    color: #7ed957;
+    background-color: transparent;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100vh;
+    width: 50vw;
+    padding: 50px;
+}
+
+.info p a {
+    color: #7ed957;
+}
+
+.info p a:hover {
+    color: #69b349;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: fit-content;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.2s ease;
+    border-radius: 20px;
+}
+
+.icon p {
+    font-size: 15px;
+    width: 200px;
+}
+
+.icon img {
+    width: 100px;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+footer div a {
+    color: #7ed957;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+footer div a:hover {
+    color: #69b349;
+}
+
+footer span {
+    color: #555;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    form {
+        width: 70vw;
+    }
+
+    input,
+    button {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .senha-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .info {
+        gap: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .icons {
+        gap: 5px;
+    }
+
+    .icon {
+        padding: 10px;
+    }
+
+    .icon img {
+        width: 60px;
+    }
+
+    .icon p {
+        width: 130px;
+        font-size: 14px;
+    }
+
+    input {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .formulario p {
+        font-size: 16px;
+    }
+
+    .formulario img {
+        width: 120px;
+    }
+
+    .senha-container {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .entrar {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .info {
+        gap: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .icons {
+        gap: 5px;
+    }
+
+    .icon {
+        padding: 10px;
+    }
+
+    .icon img {
+        width: 60px;
+    }
+
+    .icon p {
+        width: 130px;
+        font-size: 14px;
+    }
+
+    input {
+        width: 250px;
+        font-size: 14px;
+    }
+
+    .formulario p {
+        font-size: 16px;
+    }
+
+    .formulario img {
+        width: 120px;
+    }
+
+    .senha-container {
+        width: 250px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 250px;
+        font-size: 14px;
+    }
+
+    .entrar {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        overflow: auto;
+    }
+
+    .formulario,
+    .info {
+        width: 100vw;
+        height: auto;
+        border: none;
+        padding: 30px 20px;
+    }
+
+    form {
+        width: 90vw;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .icon {
+        width: 100%;
+    }
+
+    .icon p {
+        text-align: center;
+        width: 80%;
+    }
+
+    footer div {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .formulario img {
+        width: 150px;
+    }
+
+    .formulario p {
+        font-size: 18px;
+    }
+
+    .icon img {
+        width: 80px;
+    }
+
+    .icon p {
+        font-size: 14px;
+    }
+
+    .entrar {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .senha-container span {
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 95vw;
+    }
+
+    input,
+    button {
+        padding: 12px 8px;
+        font-size: 14px;
+    }
+
+    .formulario {
+        border-right: none;
+        border-bottom: 1px solid #555;
+    }
+
+    .info {
+        border-left: none;
+        border-top: 1px solid #555;
+        margin-top: 120px;
+    }
+
+    .formulario p,
+    .info p {
+        font-size: 16px;
+    }
+
+    .icon img {
+        width: 60px;
+    }
+
+    footer span {
+        font-size: 14px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        gap: 20px;
+    }
+}

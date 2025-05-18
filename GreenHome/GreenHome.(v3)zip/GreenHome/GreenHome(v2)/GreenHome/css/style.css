@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: #7ed95725;
+    color: #66af46;
+}
+
+::-moz-selection {
+    background: #7ed95725;
+    color: #66af46;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    background-color: #7ed95710;
+    width: calc(100% - 10vw);
+    height: calc(100vh - 85px);
+    margin-left: 10vw;
+    margin-top: 85px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    color: #7ed957;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #7ed957;
+    height: 85px;
+    z-index: 1000;
+}
+
+.container h1 {
+    color: #7ed957;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 18px;
+    width: 400px;
+    text-align: left;
+}
+
+.sidebar {
+    width: 10vw;
+    height: 100vh;
+    border-right: 1px solid #7ed957;
+    color: #7ed957;
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    position: fixed;
+    transition: 0.3s;
+    left: 0;
+}
+
+.sidebar p {
+    color: #999;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+    content: url('../assets/logo.png');
+}
+
+.menu {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.menu li a {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+    color: #7ed957;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    background-color: #7ed95742;
+}
+
+.menu i {
+    font-size: 18px;
+}
+
+.menu span {
+    font-size: 16px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    width: fit-content;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.2s ease;
+    border-radius: 20px;
+}
+
+.icon p {
+    font-size: 15px;
+    width: 200px;
+}
+
+.icon img {
+    width: 80px;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1440px) {
+    .sidebar {
+        width: 15vw;
+        padding: 20px 5px;
+    }
+
+    .container {
+        margin-left: 15vw;
+    }
+
+    .container header {
+        height: 9vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 20vw;
+        padding: 20px 5px;
+    }
+
+    .container {
+        margin-left: 20vw;
+    }
+
+    .container header {
+        height: 9vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+        padding: 20px 5px;
+    }
+
+    .container {
+        margin-left: 60px;
+    }
+
+    .menu li:hover {
+        transform: translateX(0);
+    }
+
+    .menu span {
+        display: none;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .container h1 {
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .container p {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .sidebar p {
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-top: -20px;
+        gap: 0;
+    }
+
+    .icon img {
+        width: 50px;
+    }
+
+    .icon p {
+        font-size: 12px;
+        width: 150px;
+    }
+}
